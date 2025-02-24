@@ -1,0 +1,71 @@
+2. Classes in JavaScript
+ES6 introduced classes in JavaScript, making object creation and inheritance more structured and readable.
+
+
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+  }
+}
+
+const john = new Person("John", 30);
+john.greet(); // Hi, I'm John and I'm 30 years old.
+
+
+
+.....................................................................
+
+Class Inheritance\
+
+
+class Student extends Person {
+  constructor(name, age, grade) {
+    super(name, age); // Calls the parent constructor
+    this.grade = grade;
+  }
+
+  study() {
+    console.log(`${this.name} is studying in grade ${this.grade}.`);
+  }
+}
+
+const student1 = new Student("Alice", 20, "A");
+student1.greet(); // Hi, I'm Alice and I'm 20 years old.
+student1.study(); // Alice is studying in grade A.
+
+
+
+
+
+Getters and Setters in Classes
+
+
+
+ class Circle {
+  constructor(radius) {
+    this._radius = radius;
+  }
+
+  get radius() {
+    return this._radius;
+  }
+
+  set radius(newRadius) {
+    if (newRadius > 0) {
+      this._radius = newRadius;
+    } else {
+      console.log("Radius must be positive.");
+    }
+  }
+}
+
+const c = new Circle(5);
+console.log(c.radius); // 5
+c.radius = 10;
+console.log(c.radius); // 10
