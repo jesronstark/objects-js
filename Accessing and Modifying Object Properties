@@ -1,0 +1,16 @@
+const book = {
+  title: "1984",
+  author: "George Orwell"
+};
+
+// Accessing properties
+console.log(book.title); // Output: 1984
+console.log(book["author"]); // Output: George Orwell
+
+// Adding a new property
+book.year = 1949;
+console.log(book.year); // Output: 1949
+
+// Modifying an existing property
+book.title = "Animal Farm";
+console.log(book.title); // Output: Animal Farm
