@@ -1,0 +1,26 @@
+// Base class
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+// Derived class
+class Student extends Person {
+  constructor(name, studentId) {
+    super(name); // Calls the constructor of the parent class
+    this.studentId = studentId;
+  }
+
+  study() {
+    console.log(`${this.name} is studying.`);
+  }
+}
+
+const student = new Student("Alice", "S12345");
+student.greet(); // Output: Hello, my name is Alice.
+student.study(); // Output: Alice is studying.
