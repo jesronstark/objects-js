@@ -1,0 +1,12 @@
+// Using object literal syntax
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+  // Method inside an object
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+
+console.log(person.fullName()); // Output: John Doe
