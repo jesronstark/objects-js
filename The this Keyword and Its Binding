@@ -1,0 +1,11 @@
+const obj = {
+  value: 100,
+  showValue() {
+    console.log(this.value);
+  }
+};
+
+obj.showValue(); // Output: 100
+
+const extractMethod = obj.showValue;
+extractMethod(); // Output: undefined (or global object value in non-strict mode)
