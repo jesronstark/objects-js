@@ -1,0 +1,13 @@
+// Parent object
+const vehicle = {
+  type: "Vehicle",
+  start() {
+    console.log("Starting the vehicle...");
+  }
+};
+
+// Child object inheriting from vehicle
+const car = Object.create(vehicle);
+car.type = "Car";
+car.start(); // Output: Starting the vehicle...
+console.log(car.type); // Output: Car
