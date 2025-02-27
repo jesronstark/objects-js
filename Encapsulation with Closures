@@ -1,0 +1,19 @@
+function createCounter() {
+  let count = 0; // Private variable
+
+  return {
+    increment() {
+      count++;
+      console.log(count);
+    },
+    decrement() {
+      count--;
+      console.log(count);
+    }
+  };
+}
+
+const counter = createCounter();
+counter.increment(); // Output: 1
+counter.increment(); // Output: 2
+counter.decrement(); // Output: 1
