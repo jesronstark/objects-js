@@ -1,4 +1,4 @@
-1. Objects in JavaScript
+e1. Objects in JavaScript
 Objects in JavaScript are collections of key-value pairs. The keys are strings (or Symbols), and the values can be any data type, including functions.
 
 Creating Objects
