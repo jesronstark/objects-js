@@ -3,6 +3,8 @@
 
 
 
+
+
 // Using object literal syntax
 const person = {
   firstName: "John",
