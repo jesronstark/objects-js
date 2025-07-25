@@ -13,7 +13,12 @@
 
 // Using object literal syntax
 const person = {
-  firstName: "John",
+
+
+  firstName: "John",e
+
+
+
   lastName: "Doe",
   age: 30,
   // Method inside an object
