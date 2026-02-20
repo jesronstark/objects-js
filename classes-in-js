@@ -1,7 +1,6 @@
 
 
 
-
 2. Classes in JavaScript
 ES6 introduced classes in JavaScript, making object creation and inheritance more structured and readable.
 
@@ -18,7 +17,7 @@ class Person {
   }
 }
 
-const john = new Person("John", 30);
+const john = new Person("John", 30)
 john.greet(); // Hi, I'm John and I'm 30 years old.
 
 
