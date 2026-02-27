@@ -10,14 +10,12 @@
 
 
 
-
 // Constructor function
 function Car(make, model, year) {
   this.make = make;
   this.model = model;
   this.year = year;
 }
-
 // Creating an instance
 const myCar = new Car("Toyota", "Corolla", 2021);
 console.log(myCar.make); // Output: Toyota
