@@ -1,6 +1,5 @@
 
 
-
 // Constructor function
 function Car(make, model, year) {
   this.make = make;
