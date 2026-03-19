@@ -16,7 +16,6 @@
 
 
 
-
 const book = {
 
   title: "1984",
